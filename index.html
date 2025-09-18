@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traffic ligh simulator</title>
+
+    <style>
+.traffic-light{
+    width: 100px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px; 
+}  
+.light{
+    width: 80px;
+height: 80px;
+ border-radius: 50%;
+margin: 10px;}
+.red{
+    background-color:red;
+}
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+<head>
+    <body>
+        <h1> traffic light simulator</h1>
+        <div class="traffic-light">
+            <div class="light red"</div>
+                
+                <div class="light green"</div>
+                </div>
+<script>
+
+ const redlight =document.queryselector(".red");
+ const yellowlight =document.queryselector(".yellow");
+ const greenlight =document.queryselector(".green");
+function changelights() {
+    setTimeout(()=> { 
+        redlight.style.backgroundcolor=".red";
+        yellowlight.style.backgroundcolor="transparent";
+        redlight.style.backgroundcolor="transprent";
+        setTimeout(()=>{
+            redlight.style.backgroundcolor="transparent";
+            yellowlight.style.backgroundcolor=".yellow";
+            redlight.style.backgroundcolor="transparent";
+            setTimeout(()=>{
+                redlight.style.backgroundcolor="transparent";
+                yellowlight.style.backgroundcolor="transaprent";
+                redlight.style.backgroundcolor=".green";
+            },2000);
+        },1000);
+    },2000);
+    }
+changelight();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
